@@ -1,30 +1,36 @@
-# create a django project `django-admin startproject watchmate`
+# create a django project
 
-# create a new app inside the project `python3 manage.py startapp watchlist`
+    - `django-admin startproject watchmate`
 
-# `pip install djangorestframework` without underscore !important
+# create a new app inside the project
 
-# add `rest_framework` to INSTALLED_APPS inside settings.py
+    - `python3 manage.py startapp watchlist`
 
-# create api folder inside the app and inside:
+    - `pip install djangorestframework` without underscore !important
+
+### add `rest_framework` to INSTALLED_APPS inside settings.py
+
+### create api folder inside the app and inside:
 
     - create a views.py, serializers.py and urls.py folder.
 
-# create the following:
+### create the following:
 
     - model called `Movies`
     - a serializer -> user `rest_framework.serializers.Serialzer` as parent class.
     - view function called `movie_list`
     - set up routes in the urls.py file.
 
-# run `python manage.py makemigrations/migrate`
+### run
 
-# run the server!
+    - `python manage.py makemigrations/migrate`
 
-# Inside Serializer
+### run the server!
+
+### Inside Serializer
 
     - define create and update functions to make POST and PUT work.
 
-# POST create
+### POST create
 
     - `return Movie.objects.create(**validated_data)`
