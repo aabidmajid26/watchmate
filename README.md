@@ -1,8 +1,8 @@
-# create a django project
+### create a django project
 
     - `django-admin startproject watchmate`
 
-# create a new app inside the project
+### create a new app inside the project
 
     - `python3 manage.py startapp watchlist`
 
